@@ -10,7 +10,7 @@ public class LiftingRobot extends Robot {
 
     public void lift(double lifting) {
         if (lifting < maxLiftHeight) {
-            System.out.println("lifting succeeded with the requested height");
+            System.out.println("Lifting succeeded with the requested height");
         } else {
             System.out.println("You input incorrect height");
         }
