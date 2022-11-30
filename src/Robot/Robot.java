@@ -19,4 +19,11 @@ public abstract class Robot {
     public void boot() {
         System.out.println(unitName + "  the robot is booting. ");
     }
+
+    @Override
+    public String toString() {
+        return "Robot{" +
+                "unitName='" + unitName + '\'' +
+                '}';
+    }
 }

@@ -29,10 +29,16 @@ public class BendingRobot extends Robot{
     }
 
     @Override
+
     public String toString() {
-        return "BendingRobot{" +
-                "maxBendAngle=" + maxBendAngle +
-                ", unitName='" + unitName + '\'' +
+
+        return "BendingRobot {" +
+
+                " unitName = '" + super.getUnitName() + '\'' +
+
+                " maxBendAngle = " + maxBendAngle +
+
                 '}';
+
     }
 }

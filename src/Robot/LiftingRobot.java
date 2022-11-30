@@ -17,9 +17,16 @@ public class LiftingRobot extends Robot {
     }
 
     @Override
+
     public String toString() {
-        return "LiftingRobot{" +
-                "maxLiftHeight=" + maxLiftHeight +
+
+        return "BendingRobot {" +
+
+                " unitName = '" + super.getUnitName() + '\'' +
+
+                " maxBendAngle = " + maxLiftHeight +
+
                 '}';
+
     }
 }
