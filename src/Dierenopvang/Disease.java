@@ -1,17 +1,14 @@
 package Dierenopvang;
 
-public enum Disease {
+public enum Disease implements Vaccinateable{
     CHICKENPOCKS,
     FLUE,
     POLIO,
     HEPATITISA;
-
-    private final boolean disease;
-    Disease() {
-        this.disease = false;
-
+    @Override
+    public void vaccinateAnimal(Disease disease) {
+        boolean a = false;
     }
-    public boolean isDisease (){
-        return false;
-    }
+
+
 }
