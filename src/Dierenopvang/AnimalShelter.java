@@ -33,7 +33,7 @@ public class AnimalShelter {
     }
 
     public void sortAnimals() {
-        animals.sort(Comparator.comparing(animal -> getAnimalId()));
+        animals.sort(Comparator.comparing(Animal::getAnimalNumber));
         System.out.println(animals);
     }
 
@@ -46,11 +46,10 @@ public class AnimalShelter {
         System.out.println(animals);
     }
     public void printAnimalsNotVaccinated(Disease disease) {
-//        animals.sort(Comparator.comparing(Animal::));
-//        System.out.println(animals);
+
     }
 
-    public Animal findAnimal(int animalId){
+    public Animal findAnimal(int animalNumber){
         if(animalId == getAnimalId()) {
             System.out.println("Id correct, your animal is here");
         }
@@ -73,6 +72,15 @@ public class AnimalShelter {
     }
     public void treatAllAnimals() {
 
+    }
+
+    public Animal findOldestAnimal(){
+        animals.sort(Comparator.comparing(Animal::getAge).reversed());
+        return animals.get(0);
+    }
+
+    public int countAnimals(){
+        return animals.size();
     }
 
 }
